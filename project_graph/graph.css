@@ -1,0 +1,31 @@
+#project-desc-insert-point {
+  margin-left: 20px;
+}
+
+#project-data-container {
+  float: right;
+  transition: all 0.3s ease;
+}
+
+#project-data-title {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+#project-data-tier {
+  color: #656565;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+#project-data-description {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: initial;
+}
+
+.graph-table {
+  width: 60vw;
+  margin-left: 180px;
+}

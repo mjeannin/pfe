@@ -1,0 +1,422 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="menu/css/default.css" />
+  <link rel="stylesheet" type="text/css" href="menu/css/component.css" />
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="project_graph/graph.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="miniterm/webcomponents.min.js"></script>
+  <link rel="import" href="miniterm/fake-terminal.html">
+  <link rel="icon" type="image/png" href="img/favicon_floppy.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>42</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+      <span></span>
+    </div>
+    <div class="hidden-side-background">
+    </div>
+
+      <div class="main">
+        <div class="side">
+          <nav class="dr-menu">
+            <div class="dr-trigger"><span class="dr-icon dr-icon-menu"></span><a class="dr-label">Portraits</a></div>
+            <ul>
+              <li><a class="dr-icon" id="link-paul">Paul</a></li>
+              <li><a class="dr-icon" id="link-jossy">Jossy</a></li>
+              <li><a class="dr-icon" id="link-elliot">Elliot</a></li>
+              <li><a class="dr-icon" id="link-hana">Hana</a></li>
+              <li><a class="dr-icon" id="link-kevin">Kévin</a></li>
+              <li><a class="dr-icon" id="link-alienor">Aliénor</a></li>
+              <li><a class="dr-icon" id="link-thanh">Thanh-Quy</a></li>
+              <li><a class="dr-icon" id="link-damien">Damien</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="popup-closed" id="popup-paul">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-paul.jpg" class="portrait-img"></img>
+            <h2>Paul&nbsp;: “Au bout d’un an à 42, j’ai été embauché en CDI à 45&nbsp;000 euros annuels”</h2>
+            <p>"Avant ma rentrée à 42 en novembre 2015, j’ai passé tout l’automne à traîner sur le deep Web, les forums un peu underground avec des fraudes bancaires et du trafic d’armes et de drogue. J’ai commencé à me faire connaître dans le milieu et à apprendre des trucs intéressants.</p>
+            <p>J’ai continué ça toute l'année, en même temps que 42. L’informatique me passionne, mais je ne suis pas excellent en programmation. J’y arrivais, mais sans être dans les meilleurs. J’ai fait ma première année, et puis je suis parti en stage à LemonWay, un moyen de paiement français. Le directeur est venu me chercher directement, après avoir vu sur LinkedIn que j’avais des compétences en fraude. Là-bas, je suis risk manager, je m’occupe de la lutte contre la fraude et des marchands à risque. Je fonctionne assez à l’instinct. Ce n’est pas du développement, mais de l’analyse&nbsp;: je ne code pas. 42 m’a donné une culture informatique et un vrai esprit algorithmique. A partir d’un problème, on crée un raisonnement avec des “si” et des “alors”. En analyse, c’est vraiment capital d’avoir cet esprit rationnel. Et savoir coder permet d’exprimer plus facilement ses besoins auprès de développeurs.</p>
+            <p>Dans deux mois, je finirai mon stage mais je ne retournerai pas à 42. Je partirai chez un autre moyen de paiement, Oyst. Avoir une vraie expérience en fraude, ça fait la différence dans ce domaine. Ils m’ont repéré chez LemonWay et m’ont embauché en CDI. Je vais toucher 45&nbsp;000 euros de salaire annuel, plus 5&nbsp;000 euros de prime. Ça fait autour de 3&nbsp;000 euros nets par mois. A 21 ans et après une seule année d'études, c’est plutôt cool.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-jossy">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-jossy.jpg" class="portrait-img"></img>
+            <h2>Jossy&nbsp;: “Je ne me reconnaissais pas dans les geeks d’une fac d’info”</h2>
+            <p>“Je suis allé en maths-info à la fac, mais j'étais un peu paumé. J’avais passé toute ma scolarité dans le privé. Ici, il n’y avait pas de cadre, pas de vie étudiante, pas d'activités en-dehors des cours. Je ne me reconnaissais pas dans les geeks d’une fac d’info&nbsp;: des mecs qui n’ont pas de vie sociale, qui jouent aux jeux en ligne toute la journée, qui ne font pas de sport et n’aiment pas les soirées, ni la vie sociale en général, en fait. J’aimais le code, mais ce n'était pas enseigné de façon à me motiver. C'était lent, très lent. Et puis c'était trop théorique. J'étais un peu frustré intellectuellement. J'étais face à des problématiques qui me plaisaient, mais les méthodes qu’on m’imposait ne me correspondaient pas.</p>
+            <p>A Paris, j’ai intégré Cojean (chaîne française de restauration rapide, ndlr). J’ai commencé avec un petit contrat d'équipier polyvalent, et puis j’ai grimpé les échelons au fur et à mesure. Je suis devenu manager. Entretemps j’ai obtenu un master dans une école de commerce parisienne, et puis je suis passé à temps plein chez Cojean, en attendant de trouver ma voie.</p>
+            <p>J’ai toujours recherché à la fois la créativité, l’autonomie et quelque chose qui n’est pas une connaissance figée, qui évolue. Au fond de moi, je savais que l’informatique était la réponse à ce que je voulais. A 42, on est plus proactifs qu'à la fac, on ne reçoit pas l’information passivement. Et puis la magie de 42, c’est que les gens sont à la fois très différents et très ouverts. Il y a de la place pour tout le monde. C’est ma différence parmi toutes les différences qui fait la richesse de la communauté 42."</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-elliot">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-elliot.jpg" class="portrait-img"></img>
+            <h2>Elliot&nbsp;: “J’ai monté mon premier PC à l'âge de 14 ans”</h2>
+            <p>“J’ai commencé à m’intéresser à l’informatique quand j’étais gamin, à 11 ans, en lisant <i>Sciences et Vie Junior</i>. Je voulais commencer à programmer en C mais je ne comprenais rien, c'était trop difficile. J’ai vite laissé tomber. Quand je suis arrivé au lycée, à 13 ans, j’ai découvert le Python. Et là, ça a été énorme. J’ai commencé à m’éclater comme jamais. Je pouvais rester bloqué des heures entières sur un programme. Le premier algorithme que j’ai fait, c’était un solveur de sudoku, à 14 ans. C’était super difficile, donc j’allais chercher des infos en ligne, sur des forums, etc. Et quand j’ai réussi, j’étais tombé dans la programmation. J’ai monté mon premier PC à ce moment-là, j’ai commencé à jouer aux jeux vidéos et à m’insérer dans la culture geek.</p>
+            <p>Quand je suis arrivé en fac de médecine, quand les cours me faisaient chier, je programmais en amphi pour le fun. Quand j’ai raté mon premier semestre, mes parents ont arrêté de payer mon appart, et j’ai du prendre un travail assez pourri dans un service d’attrape-nigaud par sms.</p>
+            <p>Un mois après avoir lâché la fac, j’ai rencontré les parents de ma copine. Pendant le déjeuner, ils m’ont demandé ce que j’allais faire dans la vie. Question ultra gênante&nbsp;: je ne savais pas ce que j’allais faire dans la vie, et j’avais arrêté mes études. Je savais juste que je voulais faire de l’informatique. Mes parents ne pouvaient pas me payer une école hors de prix, comme Epitech ou eXia. La mère de ma copine m’a parlé de 42. J’ai tout de suite voulu y aller, le concept me plaisait trop. C’était une école où il n’y avait que des autodidactes, comme moi. Pouvoir faire mes études et ensuite rentrer dans le monde professionnel, sans avoir à rester assis dans un amphi à écouter parler un prof six heures par jour, pour ensuite retaper ses notes... J’étais partant.</p>
+            <p>J’ai fait la piscine en août 2015 et là, ma vie a basculé. J’étais comme un poisson dans l’eau. Avant d’arriver en piscine, j’avais aucune idée de mes compétences. Et puis je me suis rendu compte dès le premier jour que j’étais un des plus avancés en termes de motivation et de compétences. Comme j’étais plutôt sociable, ça s’est bien passé. J’ai fini l’exam final 3ème de la piscine. Je suis resté en tête de promo pendant ma scolarité, et je bosse aujourd'hui dans une start-up qui fait de la détection de fuite de données, CybelAngel. La plupart de mes collègues sortent d’écoles d’ingénieurs réputées, je suis le premier à me pointer dans cette boîte sans avoir fait de master. Si je ne sortais pas de 42, je n’aurais eu aucune chance de rentrer là-bas.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-hana">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-hana.jpg" class="portrait-img"></img>
+            <h2>Hana&nbsp;: “En 2013, tout était encore à créer”</h2>
+            <p>“Je suis née en Algérie, et je suis venue en France avec mes frères et mon père. Mon père est un scientifique brillant bardé de diplômes, vachement scolaire. Pour lui, les diplômes c'est obligatoire, un doctorat au minimum. Du coup, il n'était pas trop rassuré par 42. J’ai fait un parcours classique&nbsp;: collège, lycée, bac ES. C’est là que c’est parti en couilles. Au lycée tu dois choisir une orientation post-bac, et moi je savais pas trop ce que je voulais faire, il y avait beaucoup de domaines qui m’intéressaient. Du coup, j’ai un peu tout mis dans APB&nbsp;: communication, économie, psychologie. J’ai fait une année de psycho, puis une année d'éco-gestion. En plein milieu de l'année, Xavier Niel fait une conférence sur le thème “Je vais créer une école de malade mental”. J’avais 0 background en programmation, je n’y connaissais rien en informatique, mais ça m’intéressait et ça avait l’air marrant, alors j’y suis allée. C'était la première piscine de 42, en 2013. Je pensais abandonner au bout de quelques jours, j’avais même réservé des billets d’avion pour partir en Espagne. Finalement, ça m’a plu. Je suis restée, j’ai kiffé, j’ai douillé. Et là, ça fait 4 ans.</p>
+            <p>La première année, c'était intense, parce que les projets étaient encore cloisonnés, avec des deadlines serrées. Mais ce qui était cool, c’est que tout était encore à créer. Il n’y avait pas d’associations, pas de communauté étudiante, et la moitié du bâtiment était encore en construction. On se sentait investis, parce qu’on savait qu’on était les premiers d’un truc qui allait être génial.</p>
+            <p>42 m’a apporté l’audace de faire ce que je veux faire, l’autonomie, et la liberté. C’est une des premières choses que je dis en entretien&nbsp;: je ne veux pas d’horaires. Je sais quand je suis productive, quand je ne le suis pas, et ça ne sert a rien de m’imposer des horaires qui me rendront moins productive. Il faut l'expliquer de manière honnête et réaliste, mais en général, ça passe.</p>
+            <p>En ce moment, je suis chef de projet Junior chez Dior.com. Ça fait trois mois que j’y suis, et ma boss commence à me donner des vraies responsabilités, c’est hyper gratifiant. On a un gros marché en Europe, mais aussi aux Etats-Unis et en Chine. Du coup, je commence à parler chinois - enfin j’essaie !”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-kevin">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-kevin.jpg" class="portrait-img"></img>
+            <h2>Kévin&nbsp;: “J’ai abandonné mes études au lycée pour me consacrer au tennis de table”</h2>
+            <p>“J’ai fait des études normales jusqu’en seconde. Je savais depuis tout petit que je voulais faire de l’informatique, du coup j’ai choisi d’aller en S. Mais pendant mes deux dernières années de lycée, j’ai mis mes études de côté pour me consacrer au tennis de table. J’ai voulu faire une carrière professionnelle, avant de passer entraîneur. Finalement, ça ne s’est pas super bien passé, et j’ai arrêté. Comme je n’avais pas le bac, mon plan B, c'était de travailler au garage de mon père. Ça ne m’a pas plu non plus. Je réfléchissais à retourner au lycée, mais j’ai voulu tenter le coup et j’ai fait la piscine de 42.</p>
+            <p>J’ai galéré de ouf, mais j’ai fait de belles rencontres. Je dormais sur place, on se faisait réveiller tous les soirs… Mais c'était une bonne expérience. En fait, c'était plutôt cool. J’ai gardé quasiment le même rythme après avoir intégré, 10 a 13 heures, 7 jours sur 7. Ça fait six mois que je suis rentré maintenant, et je commence à ralentir. C’est devenu plutôt 10 heures par jour, 6 jours sur 7. Au tennis de table, j’avais aussi un gros rythme. Ce n’est pas un problème pour moi de travailler à fond. J’essaie d’aller vite pour me trouver un stage, puis un travail, parce que pour l’instant je vis aux crochets de mes parents.</p>
+            <p>En ce moment j’essaie d'acquérir des compétences de développement Web. Mon père m’a demandé de faire un site pour son garage.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-alienor">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-alienor.jpg" class="portrait-img"></img>
+            <h2>Alienor&nbsp;: “On a tous un côté un peu bizarre, une pointe de folie.”</h2>
+            <p>“Je suis tibétaine, écossaise, mongole et japonaise, un gros melting-pot de cultures. Quand j'étais petite, je ne voulais pas être astronaute, comme la plupart des enfants, mais astrophysicienne. Les maths, ça a toujours été ma passion. J'adore l'astronomie, je passais ma vie sur les toits des maisons à regarder les étoiles.</p>
+            <p>Au lycée, je voulais faire S, mais on m’a forcée à aller en L alors que j’avais entre 15 et 17 de moyenne dans les matières scientifiques. J’ai vu mes rêves s’effondrer. Après le bac, j’ai fait une licence de neuropsychologie, puis un master que j’ai laissé tomber pour aller à 42. J’adorais la neuropsychologie mais la fac, c'était pas mon truc. J’ai toujours eu une phobie scolaire. Quand j'étais petite, je souffrais d’Asperger léger et j'étais la seule fille de couleur. Les autres enfants me trouvaient bizarre, j'étais un peu harcelée. J’ai jamais aimé l'école, même si j’avais de très bonnes notes. A la fac, au début, j’ai apprécié la foule, l’anonymat. Mais je n’ai pas accroché au système de partiels, à l’apprentissage par coeur, j'étais déçue de ne pas pouvoir faire de vraies recherches. Je me suis demandé ce que j’allais faire de ma vie, et là, j’ai eu la réponse à la grande question&nbsp;: 42.</p>
+            <p>Ici, je me sens libre. Il n’y a pas de notes, de deadlines, tout ce qui me posait problème à l'école classique. Et puis il y a beaucoup plus de gens différents. Personne ne juge. On a tous un côté un peu bizarre, une pointe de folie. Après m'être beaucoup cherchée, j’ai enfin l’impression d’avoir trouvé ma place.</p>
+            <p>Mon rêve, c’est de travailler chez Pixar. On peut faire des dessins animés par les mathématiques et l'ingénierie. C’est ce qu’on apprend à faire ici dans la branche graphique&nbsp;: de l’art avec des maths.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-thanh">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-thanh.jpg" class="portrait-img"></img>
+            <h2>Thanh-Quy&nbsp;: “À la rentrée 2014, on a monté l’association 42 Entrepreneurs”</h2>
+            <p>“Après ma prépa, je suis rentré en magistère de physique à Paris 7 - en gros, ils prennent les meilleurs de la fac et les pires de prépa. On s’est rendus compte à ce moment-là que les étudiants étaient vachement plus autonomes à la fac. Comme les profs étaient nuls, ils ont arrêté d’aller en cours au bout de deux semaines et ont commencé à taffer de leur côté à la bibliothèque. Alors que nous, on est restés dans le schéma ultra-scolaire de la prépa et on a continué à aller en cours, à se toucher pendant 10 mois et à taffer juste avant les partiels.</p>
+            <p>Ensuite, j’ai fait un master en physique quantique. Ça me plaisait, mais je ne me voyais pas faire trois ou quatre ans dans un labo jusqu'à ma thèse, puis encore quarante ans dans un labo. C'était une routine qui ne me tentait pas spécialement. J’avais envie de plus de variété.</p>
+            <p>En prépa, tu es totalement babysitté alors qu'à l’inverse, à 42, tu es totalement autonome. La fac c’est entre les deux, mais je pense que cette demi-mesure est le système moins efficace. Pour moi, la fac c’est “la réussite de tous implique l'échec de tous”.</p>
+            <p>Dès la fin du M1, après être rentré d’un stage à l'étranger, j’ai eu envie de me lancer dans l’entreprenariat. J’avais vu l’avance de l’Angleterre sur la France dans le numérique, et je me suis dit qu’il y avait moyen d’apporter de l’innovation ici. Pendant mon année de M2, je me suis renseigné sur l'écosystème entrepreneurial. Un nom revenait souvent&nbsp;: l'école 42, qui venait d’ouvrir à l'époque. J’ai fait la piscine en juillet 2014, ça m’a plu.</p>
+            <p>À 42, j’ai rencontré beaucoup de gens avec des profils très variés, dont certains qui voulaient monter leur boîte. À la rentrée 2014, on a monté 42 Entrepreneurs avec d’autres élèves. Chacun a amené son réseau et l’asso a vite été un succès. Moi par exemple, j’ai amené Yann-Cédric Mainguy, le fondateur du Meltdown (une chaîne de bars orientés e-sport, ndlr). La nouvelle équipe vient de lever 15&nbsp;000 euros de Vente-privée pour l'année en cours.</p>
+            <p>En ce moment, j’ai deux projets sur le feu&nbsp;: un projet de téléphone arabe en application mobile, et un générateur de métatags pour les développeurs Web. Avec mon associé, on a commencé à coder celui-la il y a deux semaines.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-damien">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-damien.jpg" class="portrait-img"></img>
+            <h2>Damien&nbsp;: “Quand j'étais en licence d'info, on en savait parfois plus que les profs”</h2>
+            <p>“Je savais depuis la 5ème que je voulais faire de l’informatique. À ce moment-là, je commençais à jouer sur des serveurs privés, et je voulais voir comment ça marchait. Quand j’ai demandé à m’orienter vers l’informatique, la meilleure option que m’ait donné l'école était un bac pro SEN. C'est comme ça que je me suis retrouvé à réparer des machines à laver.</p>
+            <p>Après j’ai fait un BTS SIO en alternance, la branche classique quand tu veux faire du développement informatique. Sur le coup j’ai trouvé ça intéressant, j’ai appris ce que je voulais apprendre. J’ai continué sur une licence à la fac. On n'avait pas de cours magistraux mais plutôt des TD, en petites classes. En général, c’était&nbsp;: explication des nouveaux langages, exercices puis projets. On était tous un peu déçus dans cette licence. On n’apprenait pas grand-chose, et les choses qu’on apprenait étaient souvent dépassées. À certains moments, on en savait plus que les profs.</p>
+            <p>Pendant la piscine de 42, je voyais tout le monde galérer et je me suis dit que ce serait plus intéressant pour moi de leur expliquer. Ça les aidait à comprendre, et ça m’aidait moi à y voir plus clair en me forçant à être pédagogue. En gros je venais à 14h, je passais ma journée jusqu’à 23h42 à aider les gens, et je faisais les exercices du jour suivant jusqu’à 2h du matin.</p>
+            <p>Depuis que je suis rentré à 42, ce qui me fait avancer, ce n’est pas juste l’envie d’apprendre de nouvelles choses, c’est aussi mes potes. Quand ils me disent qu’ils sont à l’école, ça me motive à venir les rejoindre. Si je n’avais pas d’amis ici, je ne viendrais pas, je pense. Ou en tout cas, beaucoup moins.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-simon">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-simon.jpg" class="portrait-img"></img>
+            <h2>Simon&nbsp;: “Quand j’allais à l'école, au collège, au lycée, les gens s’emmerdaient. Pas ici.”</h2>
+            <p>“Je suis né à Liège, en Belgique, en 1996. J’ai fait mon école primaire en flamand, avant d’aller au secondaire en français. Là, ça ne s’est pas bien passé du tout. J’avais du mal avec les autres ados, et la pédagogie de l’école ne me convenait pas. Je m’endormais en cours, et puis je ne comprenais même pas ce qu’ils voulaient. La directrice de mon école m’a dit “Si tu as 95% à l’exam final de physique et de maths, tu peux avoir plus que 20% en Histoire.” Eh ben non. J’ai essayé, j’ai pas réussi.</p>
+            <p>À ce moment-là de ma vie, j’étais un peu coincé. Je me disais que j’aimais bien faire des études, les sciences, etc. D’un autre côté, je savais que c’était pas en révisant la veille de l’interro que j’allais pouvoir continuer toute ma vie. Et pour faire des études, il fallait le bac, enfin l’équivalent du bac en Belgique.</p>
+            <p>J’ai bossé trois ans à la Croix rouge. Ils me demandaient pourquoi je posais plein de questions, tout le temps. Au bout d’un moment, ma mère leur a dit que j’étais HP, “haut potentiel”. Et là ils ont répondu&nbsp;: “Ah mais il fallait le dire avant, on comprend mieux !” Et là je me suis dit&nbsp;: “Pourquoi tu as besoin de savoir ça? Tu ne peux pas juste m’accepter comme je suis, connard?”. Au moins, c'est le cas à 42. On est acceptés comme on est.</p>
+            <p>L’air modélisme, c’est une de mes passions. On va dans la campagne et on fait voler des drones. Quand j’avais 14 ans, je suis tombé sur la photo d’un tricoptère. Je me suis dit&nbsp;: “Tiens, j’ai envie de piloter ça!” J’ai passé un an à me renseigner sur comment ça marchait, et puis j’ai acheté des pièces pour quelques centaines d’euros. Pendant 9 mois, j’ai construit ça sans mode d’emploi. C’était assez chaud, d’ailleurs. Mais ça a marché, ça a volé&nbsp;! En ce moment je fais de l'électronique, je passe mon temps en labo. C’est moins bien documenté que la programmation donc on a un prof, Grégoire. Mais il applique la méthode 42, il vient deux heures par semaine. La plupart du temps, tu lis la doc et tu te démerdes.</p>
+            <p>Je trouve génial que 42 existe. Quand j’allais à l'école, au collège, au lycée, les gens s’emmerdaient. Pas ici.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-hugo">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-hugo.jpg" class="portrait-img"></img>
+            <h2>Hugo&nbsp;: “Je n’ai jamais aimé l’école parce que le système est oppressif. Il pousse les gens à s’entre-déchirer.”</h2>
+            <p>“Quand j’étais petit, à l’école primaire, j’adorais l'école. Je levais tout le temps la main, j’étais accro au savoir. J’étais pendu aux lèvres du professeur pour acquérir le maximum de connaissances possibles. Du coup, tout le monde me détestait, parce que je répondais aux questions du prof, j’essayais d’aider les autres donc j’étais un peu insupportable. Du coup, j’étais un peu la tête de turc. À chaque récré, je passais mon temps à survivre aux lancers de pierre et autres agressions. J’ai vite compris que le meilleur moyen de survivre dans ce monde, c’est d’être dans la norme, dans la moyenne. Je me suis dit qu’il fallait que j’aie 10, ni plus, ni moins. Comme ça, j’étais au milieu et personne ne m’emmerdait. Je suis allé au fond de la classe, j’ai arrêté d’écouter le prof. En cours, je rêvais, je gribouillais sur mon cahier, je bavardais avec mon voisin. Du coup j’avais des sales notes, et j’ai pu viser que STI électrotechnique.</p>
+            <p>Je l’ai regretté, parce qu’au bout de trois mois je me suis rendu compte que j’étais largement le meilleur de toute la classe en électronique. Mais j’ai continué comme ça, parce que j’y étais déjà. J’ai fait un DUT en Génie industriel et maintenance. Ensuite j’ai travaillé à la chaîne, puis en maintenance. J’ai bossé dans deux abattoirs. Et puis je suis venu à Paris pour passer la piscine.</p>
+            <p>Je n’ai jamais aimé l’école parce que le système est oppressif. Il pousse les gens à s’entre-déchirer. Je détestais ce système, et ce que je détestais encore plus, c’est qu’il n’y en avait pas d’autre. Il y a l’école, et c’est tout. Pour moi, 42 offre un système différent, et je trouve ça génial. L’école de Jules Ferry a été créée dans une situation où elle était adaptée. Elle a été efficace pendant longtemps, elle a bien servi la France. Mais le monde change et évolue. Maintenant, je pense qu’elle est obsolète. L’avenir de la pédagogie à mes yeux, c’est d’offrir des alternatives au système éducatif actuel, comme 42&nbsp;: il faudrait recréer de la diversité.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-raphael">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-raphael.jpg" class="portrait-img"></img>
+            <h2>Raphaël&nbsp;: "42 ou Epitech, c'est un peu tu t'autodisciplines ou tu payes"</h2>
+            <p>“J’ai commencé l’informatique en 3ème. Je jouais tout le temps à un jeu vidéo qui s’appelait Travian. C’était un vieux jeu pourri par navigateur. Il fallait juste cliquer sur des images fixes - mais bon, c’était gratuit. Un jour un pote est venu me voir en disant “Eh mec, j’ai les sources du jeu&nbsp;!”. Il me demande de traduire le jeu en français. Moi, je n’y connaissais rien au code. J’ouvre le fichier, il y avait des variables, des index, des trucs comme ça. J’y comprenais rien, mais j’ai tout traduit. Du coup tout s’est pété la gueule, évidemment, et il n’y avait plus rien qui marchait. Mais ça m’a intéressé, quand même, j’étais curieux.</p>
+            <p>Je me suis mis à regarder des tutoriels sur OpenClassroom. J’avais 15 ans. J’ai commencé à apprendre le PHP, tout ça, tout seul. Je me suis mis à réparer les bugs dans Travian, à rajouter des features et tout. A la fin, j’ai créé mon serveur et ça a marché du tonnerre. Il y avait 27 millions de vues en un an. Du coup je me suis dit “C’est vraiment trop cool de programmer, il faut que je fasse ça plus tard”. Et dès la 1ère, je me suis dit que j’allais faire Epitech.</p>
+            <p>Finalement, j’y suis resté un an. À Epitech tu payes, mais t’as pas de prof. C’est une école où tu dois te démerder de A à Z, et tu n’as aucun retour sur ce que tu fais. À 42 aussi tu dois te démerder, mais au moins c’est gratuit. Et tu es libre. Epitech c’est pour les gens qui sortent du lycée et qui ne savent pas se gérer. C’est vraiment une école post-bac en fait, alors que 42 c’est ouvert à n’importe qui, du moment que tu arrives à t’organiser. C’est un peu “tu t’autodisciplines ou tu payes”.</p>
+            <p>À Epitech, on voit 42 comme la version forkée, moins chère, la pâle copie d’Epitech. Quand tu payes tes frais de scolarité 8&nbsp;000 balles, tu te dis que c’est pas possible et qu’ils sont nuls, qu’ils auront pas de diplôme et que personne ne va les recruter. Sauf que c’est pas vrai. Maintenant quand je reviens voir des potes à Epitech, j’ouvre mon intra de 42, je mets la page des projets, je me recule et je les laisse regarder. Et là, ils se mettent à crier&nbsp;: “Putain mais merde, c’est quoi&nbsp;? C’est trop stylé&nbsp;! J’aurais dû aller à 42&nbsp;!”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-mehdi">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-mehdi.jpg" class="portrait-img"></img>
+            <h2>Mehdi&nbsp;: “Je voulais faire des jeux vidéos, ce genre de rêve d’enfant geek. Mon avenir maintenant, je le vois dans l’entreprenariat.”</h2>
+            <p>“Je suis allé à l'école comme tout le monde, jusqu’au lycée. Après un bac S, j’ai <i>rage quit</i> les études et je me suis orienté vers le monde de la nuit. J’ai été barman pendant deux ans. Au bout d’un moment, ça m’a gavé, c'était une routine qui ne me plaisait plus. Je suis quelqu’un d’assez cérébral, et faire la fête tous les soirs ne l’est pas trop. Et puis un jour, en regardant une chaîne de geeks, GameOne, je suis tombé sur un reportage sur 42. J’ai postulé direct.</p>
+            <p>L’informatique a toujours été une passion. J'étais doué pour tout ce qui était multimédias, technologies. Je baignais dedans. J’avais beaucoup fait d’hardware avant 42, et je me suis dit “Pourquoi ne pas explorer le côté software ?” Cette école, c'était ce que je faisais mais avec le cadre en plus, les moyens et la communauté.</p>
+            <p>Le jour du checkin, quand je suis arrivé à 42, je me suis dit&nbsp;: “C’est exactement ça que je veux faire”. Ce principe de l'open space, avec tout le monde qui bosse ensemble, ça me parlait. Je ne voulais pas d’un prof de fac qui me lit son manuel en amphi. J’ai toujours eu du mal avec le modèle classique&nbsp;: j’explique, tu écoutes, tu apprends, tu recraches. L’autonomie, le peer-to-peer, c'était ça que je voulais. Ici tu viens, le chemin n’est pas balisé, tu travailles avec tes potes qui sont dans la même galère que toi. J’ai vite vu 42 non pas comme une école, mais comme un centre de recherche.</p>
+            <p>Après avoir fait quelques projets de l'école, je suis devenu président du BDE. Du coup j’ai arrêté de coder pendant longtemps, je faisais ça à temps plein. Ça m’a appris à gérer des équipes, à organiser des événements. C’était une très bonne experience, mais ce n’est pas ce qui me passionne, contrairement au code. Maintenant que le nouveau BDE est en place, je peux reprendre la programmation. Ça fait du bien.</p>
+            <p>Je voulais faire des jeux vidéos, ce genre de rêve d’enfant geek. Mais ça a vite changé, et je me suis tourné vers le développement Web et les applications mobile. Mon avenir maintenant, je le vois dans l’entreprenariat. J’aimerais monter ma boîte. J’ai un projet de SS, une boîte de prestation de sites Internet et d’applications mobiles. Je ne peux pas vous en dire plus !”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-ichem">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-ichem.jpg" class="portrait-img"></img>
+            <h2>Ichem&nbsp;: “On m’a dit que c'était impossible de faire 42 et la fac en même temps, mais c’est justement ce qui m’a donné envie de continuer”</h2>
+            <p>“Je suis né dans le quartier de Saint-Jean, à Avignon. C’est un quartier chaud réputé pour la vente de drogue, je n’en suis pas fier. Quand j'étais petit, ma famille essayait de me pousser vers des métiers bien vus socialement&nbsp;: avocat, docteur… Mon frère allait contre cette idée, il me disait&nbsp;: “Fais ce que tu aimes, c’est comme ca que tu monteras les échelons.” C’est lui qui m’a tout appris. Il m’a poussé à aller toujours plus loin, à dépasser mes limites. C’est aussi lui qui m’a introduit au monde de l’informatique. Quand j'étais bébé, il me prenait sur ses genoux et me disait&nbsp;: “Ça c’est un ordinateur, et voilà comment ça s’utilise.”</p>
+            <p>Dès le collège, j’ai commencé à préparer mes plans pour aller dans cette direction. Je jouais aussi à des jeux sur l’ordinateur, que j’installais moi-même. J’ai fait le cursus normal, un bac S. Mais la plupart des matières ne m'intéressaient pas, à part les maths et la physique.</p>
+            <p>J’aurais pu ne pas passer le bac, aller à 42 directement. Mais j’ai des ambitions plus élevées. À la base, je voulais faire une école d'ingénieurs, mais je n’avais pas les moyens. Je suis entré à la fac de Paris-Est Marne-la-Vallée, et j’ai commencé à économiser pendant ma L1 pour pouvoir entrer ensuite à Epita ou à Epitech. Mais j’ai entendu parler de 42, et je me suis dit “Pourquoi pas”. Comme il n’y avait pas de diplôme, ni de cours théorique, et que j’aime le challenge, j’ai décidé de continuer la fac. Je veux créer mon entreprise, et je me suis dit que je n’aurais pas forcément besoin de compétences en maths ou en physique, mais certainement en entreprenariat et en gestion. Tout le monde a essayé de me dissuader de faire 42 et la fac en même temps, on m’a dit que c'était impossible, mais c’est justement ce qui m’a donné envie de continuer.</p>
+            <p>Depuis tout petit, j’aime gérer une équipe, avoir un groupe, avancer sur un projet commun. Je me suis dit que le meilleur moyen de réaliser ça, c'était de rejoindre le monde de l’entreprenariat. Pour ça, il faut créer sa start-up, et en tant que développeur, c’est beaucoup plus facile. Aujourd’hui, j’acquiers les compétences pour pouvoir la créer&nbsp;: l'idée, je la trouverai plus tard.”</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="popup-closed" id="popup-elise">
+      <div class="transparent-overlay">
+          <div class="popup-content">
+            <img src="img/portrait-elise.jpg" class="portrait-img"></img>
+            <h2>Élise&nbsp;: “La programmation, c’est comme le théâtre&nbsp;: tout le monde peut apprendre”</h2>
+            <p>“J’ai grandi dans un petit village paumé de Bretagne. Depuis gamine, je suis passionnée par le théâtre et les sciences. J’ai suivi des cours de théâtre au Conservatoire de Rennes, mais au lycée, je n’accrochais pas aux cours. J’ai toujours eu de mauvais profs&nbsp;: vieux, démotivés. Ils avaient perdu la flamme. J’ai quand même passé mon bac S, mais je me suis mise a chercher une filière alternative. J’ai découvert la programmation avec le stand d’Epitech au Salon de l’Etudiant&nbsp;: ça a été le déclic. J’ai trouvé ça fantastique, et j’ai su que c'était ça que je voulais faire. Mais Epitech était trop cher pour moi, j’ai cherché un truc gratuit. Quand quelqu’un m’a parlé de 42, je me suis dit&nbsp;: “Qui ne tente rien n’a rien !” J’ai passé la piscine en août, et j’ai été prise. Je suis vraiment heureuse d'être ici, c’est encore mieux que ce que j'espérais.</p>
+            <p>J'appréhendais beaucoup la piscine. C'était dur, très élitiste. Mais avec mes maigres bases de code, j’ai quand même réussi à être prise. Ce qui compte ici, c’est la passion, la motivation. Tout peut s'acquérir. Personne ne naît en sachant programmer. On ne débarque pas tous à 42 avec un bac S en poche&nbsp;: j’ai rencontré un type en piscine, il était boucher. Une de mes potes était peintre en bâtiment, l’autre était menuisier. Bien sûr, il y a une part d'inné, de talent. Mais c’est comme au théâtre&nbsp;: ce talent, ça se développe. Tout le monde peut apprendre.</p>
+            <p>En ce moment je suis en train de développer un projet de start-up dans la matrice Art 42. Le principe sera de créer du street art virtuel, c’est-à-dire des oeuvres d’art directement sur les sites Internet. Bon, quand on entend ça, on pense direct au hacking, mais nous on va essayer de faire un truc légal, avec des plugins, par exemple. Tout le monde verrait ce qui a été fait, et pourrait dessiner par-dessus. C’est vraiment ce que j’ai toujours voulu faire.”</p>
+          </div>
+      </div>
+    </div>
+  <div id="section-container">
+  <section id="section1" class="textoverpic">
+    <h1>42, l'école sans prof</h1>
+  </section>
+
+  <section id="section2" class="section-text">
+    <div class="text">
+      <p>Paris a chaud : le mois de juillet s'annonce torride. Dans cet établissement du 17ème arrondissement, les élèves suent à grosses gouttes sur leurs claviers, alignés, comme des poulets en batterie, devant des centaines de Mac tournant sans bruit. Le ronronnement de la climatisation est juste couvert par les murmures des apprentis informaticiens qui travaillent en groupe.
+</p>
+      <p>Un jeune homme dégingandé surgit soudain au milieu du cluster, suivi d’un acolyte en short. Ils ont une frite en mousse à la main, comme celles que l’on trouve dans les piscines. Ils en frappent les élèves les plus proches, et échangent des coups avant de s’enfuir. Quelques secondes plus tard, un autre homme traverse les rangées de Mac. Lui est plus vieux, la trentaine. L’air contrarié, il porte une longue tresse qui lui descend jusqu’au bas du dos, et une batte de baseball. Il mesure près de deux mètres. “C’est Zaz, chuchote un élève à son voisin. Il fait partie du staff. Lui, il ne faut pas l’emmerder.” Un peu plus loin, un autre étudiant raconte que les encadrants ont donné son nom et le numéro de son poste au micro le jour de son anniversaire. Des dizaines d'élèves se sont lancés à sa poursuite. Rattrapé alors qu’il s’enfuyait, il a été enveloppé dans du cellophane et traîné ainsi saucissonné sous les douches. “C'était génial”, conclut-il avec un sourire béat.
+</p>
+      <div class="with-side">
+        <div class="info" id="info1">
+          Pourquoi 42? Il s’agit en fait d’une référence bien connue de l’univers geek. Dans <i>Le Guide du voyageur galactique</i>, la saga de science-fiction de Douglas Adams, 42 est la réponse à “la grande question sur la vie, l'univers et le reste”. Poussant la référence jusqu’au bout, les élèves de l’école se surnomment les “duoquadragintiens”, ou plus simplement “duoquadra”. Ce nom a même été validé par l’Académie française.
+        </div>
+        <p>Contrairement aux apparences, la scène n’a pas lieu dans une colonie de vacances, mais pendant la “piscine” de <strong>l’école 42</strong>. Cette épreuve de sélection dure un mois&nbsp;: un mois à coder 10 à 14 heures par jour, tous les jours. L’école, située dans le Nord de Paris, accueille les candidats à toute heure du jour et de la nuit. Beaucoup dorment sur place, sur des matelas gonflables à même le sol. Sur le millier de prétendants ayant commencé la piscine, la moitié finit par abandonner au fil des semaines. 300 environ seront retenus à l’issue de la piscine : en tout, ce sont 900 étudiants qui rejoignent chaque année les rangs de 42.</p>
+      </div>
+  </section>
+
+  <section id="sectiongallery1-1"></section>
+  <section id="sectiongallery1-2"></section>
+  <section id="sectiongallery1-3"></section>
+
+  <section id="section2bis" class="section-text">
+    <div class="text">
+      <div class="with-side">
+        <div class="info" id="info2">
+          Auto-entrepreneur devenu milliardaire, Xavier Niel a révolutionné le secteur des télécommunications avec Free, filiale du groupe Iliad. En 2010, il a racheté le quotidien <i>Le Monde</i> en s'associant avec Pierre Bergé et Matthieu Pigasse. Selon un classement du magazine Forbes, sa fortune est aujourd’hui estimée à 9.4 milliards de dollars.
+        </div>
+        <p>Depuis la rentrée, en novembre, l’ambiance n’est plus la même. Quelques étudiants traînent dans le hall, entre un garage à skateboards et un distributeur de préservatifs à l’effigie de Dominique Strauss-Kahn. Ils sont débraillés, en Tshirt, ambiance start-up. Derrière eux, une salle immense où les rangées de Mac s’étendent à perte de vue. 42 en compte trois, une par étage, pour un total de 900 Mac. Les machines fonctionnent en continu&nbsp;: l'école est ouverte 24 heures sur 24, 7 jours sur 7. Au rez-de-chaussée, une salle de vie accueille les évènements et les soirées. L’école compte aussi un amphithéâtre, une cafétéria, un food-truck, une salle de repos et des machines de musculation. Coût pour les élèves ? Zéro. Les infrastructures sont intégralement prises en charge par <strong>Xavier Niel</strong>. Il faut dire que la charge salariale est réduite&nbsp;: l’école n’a pas de prof.</p>
+      </div>
+      <p>Dans l’entrée, un immense tableau brun attire le regard. C’est une oeuvre du street artist Rero, une inscription en lettres capitales sur bois brûlé&nbsp;: “The system has failed.” Le tableau est sur le mur porteur du bâtiment, explique le guide lors des visites de l’école - car 42 est aussi un musée de street art. Tout un symbole. “Il n’y a aucun prérequis pour entrer ici, il suffit d’avoir moins de 30 ans et d’avoir réussi les tests de présélection. Pour nous, 42 apporte une réponse à l’échec de l’Education nationale.”</p>
+    </div>
+  </section>
+
+  <section id="section3" class="pop">
+    <div class="overlaybox">
+      <h1>“The system has failed.”</h1>
+    </div>
+  </section>
+
+  <section id="section4" class="section-text">
+    <div class="text">
+      <div class="with-side">
+        <div class="info" id="info3">
+          L’admission à 42 se fait en trois étapes&nbsp;: les tests en ligne (des tests de logique et de personnalité), le checkin (une visite de l’école obligatoire) puis la piscine proprement dite, réservée à ceux qui ont passé la présélection.
+        </div>
+          <p>“42 m’a sauvé la vie”. <a class="portrait-link" id="link-simon"><strong>Simon</strong></a> a 20 ans, des traits réguliers, un sourire franc. Comme 40% des élèves ici, il n’a pas le bac. “Je suis considéré comme HP, haut potentiel, explique-t-il. Je réfléchis différemment. À l'école, ça se passait mal, je posais trop de questions. Je trouvais les autres fermés d’esprit. Je m’emmerdais, je ne suivais pas en cours. J’ai quitté l'école et je me suis mis à travailler bénévolement dans une association. Après deux ans comme ça, je me demandais ce que j’allais faire de ma vie, si j’allais devoir retourner au lycée pour passer le bac. En regardant des vidéos sur YouTube, je suis tombé par hasard sur un reportage sur 42. Je me suis renseigné un peu, je suis allé voir ce que c’était. Et j’ai trouvé ça génial. Génial.” Il réussit sans difficulté les <strong>tests en ligne</strong>.</p>
+        </div>
+        <p>La piscine est une révélation. Il passe la sienne en 2015. “Le premier jour, c'était une bouffée d’air, raconte-t-il avec délectation. Tu arrives, tu es enfin libre de tout faire par toi-même. Il n’y a pas un mec pour te dire “fais ci, fais ça”. Tu respires, quoi !” Il prend une grande inspiration, puis reprend. “La première semaine, j’ai fait 106 heures de travail. Après, j’ai fait un burn-out. J’ai pris ma matinée, je suis allé manger un kebab dehors, et c’est allé mieux. Et puis j’ai repris sur un rythme un peu moins élevé, 13 heures par jour, par là. C’était vraiment génial. En piscine, il y a une forme de justice, qui punit les mauvais éléments, les méchants, les asociaux et les feignants. Les premiers jours, ils prennent leurs valises, ils sortent et ils reviennent pas. C’est trop bon. Dégagez ! Allez vous faire foutre, foutez-moi la paix !” Il fait un grand geste du bras pour illustrer ses propos. “Il faut avoir de l’humour, aussi. C’est super important à 42. En août, à 3h du matin la veille d’un exam, le staff a balancé une fumigène dans le dortoir. Ça a déclenché l’alarme incendie, on a dû évacuer. C’était super drôle. Un autre jour, ils étaient bourrés après un pot de départ, et ils ont chanté des chansons paillardes dans le cluster. Du coup à force, les piscineux (candidats de la piscine, ndlr) n’étaient pas contents et il y a eu des émeutes. Et quand t’as 50 personnes pas contentes devant ta porte, t’as intérêt à avoir un taser et une batte de baseball.” Depuis la rentrée, Simon travaille 70 heures par semaine. Au bout de six mois, il était major de promo.</p>
+        <p>Son cas est emblématique. Pour beaucoup d'élèves, 42 est la seule alternative au système scolaire traditionnel dont ils sont sortis perdants. Si certains, comme lui, ont eu la chance de découvrir 42 à l'orée de la vingtaine, pour beaucoup d’autres, c’est une porte de sortie après des années de galère. <a class="portrait-link" id="link-hugo"><strong>Hugo</strong></a> est dans ce cas. Après un DUT en Génie industriel et maintenance, ce jeune Breton enchaîne les jobs alimentaires. Il travaille à la chaîne dans une filiale de La Poste, puis en maintenance. Après plusieurs CDD, il prend un nouveau poste dans un abattoir. “C'était le pire boulot de ma vie, témoigne-t-il, souriant aujourd’hui derrière ses lunettes à monture métallique. J’avais l’habitude de faire les deux huit, mais là en plus, on bossait presque un samedi sur deux. L’ambiance d’équipe était exécrable. J’étais épuisé, à bout nerveusement. Je suis devenu déprimé, à moitié alcoolique. Je passais beaucoup de temps à jouer aux jeux vidéos. Au bout d’un an, ma copine m’a largué.” A 25 ans, Hugo décide de changer de vie et de faire de l’informatique. Il se déplace à Paris pour passer la piscine de 42, dort sur place. “C'était une des épreuves les plus dures que j’aie pu vivre, mentalement et physiquement. Je n’avais quasiment jamais codé, je partais de zéro, et la masse de connaissances à acquérir était immense. Mais l’ambiance était saine, on était soudés. On se soutenait. J’ai trouvé ça génial. C’est clairement une des meilleures expériences de ma vie.” Depuis la rentrée, il passe 14 heures par jour à 42, dont 10 heures de travail effectif. “J’ai pris deux semaines en décembre, pour les fêtes de fin d’année, raconte-t-il, mais sinon je travaille 7 jours sur 7.” Aujourd’hui dans le top 10 de la promo, il commencera son premier stage de développeur Web dans deux semaines.</p>
+      </div>
+  </section>
+
+  <section id="section5" class="pop">
+    <div class="overlaybox">
+      <h1>L'héritage d’Epitech</h1>
+    </div>
+  </section>
+
+  <section id="section6" class="section-text">
+    <div class="text">
+      <div class="with-side">
+        <div class="info" id="info4">
+          Physicien de formation diplômé de Stanford, Nicolas Sadirac s’est fait connaître dans les années 1990 en hackant les plans de l’avion Rafale et le site du Premier ministre de l'époque, Lionel Jospin. Ingénieur réseaux chez Epita, l’une des premières écoles d'ingénieurs françaises à former des développeurs, il prend en 1999 la direction d’Epitech lors de sa création. Il co-fonde 42 en mars 2013.
+        </div>
+        <p>A l’origine de 42, il y a la légendaire histoire de “la jeune fille au hamster”, le mythe fondateur. En 2010, <strong>Nicolas Sadirac</strong> est le directeur d’Epitech, l’école informatique de référence en France, et Xavier Niel appartient au Conseil national du numérique. Les deux hommes, qui se connaissent depuis toujours, décident de lancer la Web@cadémie. La formation est gratuite et s’adresse à des jeunes de quartiers défavorisés, qui ont arrêté leurs études avant le bac. Objectif&nbsp;: leur apprendre le métier de développeur Web. Parmi eux, une jeune fille se distingue. Elle s’appelle Lilas Merbouche. Major de promo, repérée comme un “super talent”, elle est embauchée par Free à l’issue de sa formation. Quand Xavier Niel, impressionné par sa compétence, l'interroge sur ses origines, elle répond&nbsp;: “Il y a deux ans, je vendais des hamsters chez Animalis.”</p>
+      </div>
+      <p>Cinq ans plus tard, Nicolas Sadirac aime toujours raconter cette histoire. Pour lui, elle est symptomatique d’un problème structurel de l’économie française. Il n’a pas de bureau à l’école, et nous reçoit dans une petite salle de réunion avec un mur végétal. “Le problème, c’est qu’on a un déficit de talents dans l’économie innovante en général et dans le numérique en particulier, se désole-t-il. La situation est ridicule&nbsp;: on a d’un côté des entreprises qui ont du mal à recruter, qui manquent d’informaticiens de qualité. De l’autre côté, on a des jeunes qui n’ont pas de travail, ou un travail dans lequel ils ne sont pas épanouis, et qui ont un talent qui n’est pas exploité. Aujourd’hui, le lien entre cette offre et cette demande n’est pas fait dans l'éducation classique pour des raisons purement dogmatiques. On pense que ces jeunes-là, s’ils n’ont pas été jugés suffisamment bons en maths en 3ème, n’arriveront jamais à faire de l’informatique.”</p>
+      <div class="with-side">
+        <div class="info" id="info5">
+          Ancien collègue de Nicolas Sadirac à Epita, Kwame Yamgnane le rejoint à la direction d’Epitech. C’est aussi avec lui, Xavier Niel et Florian Bucher qu’il fonde l'école 42 en 2013. Il a depuis pris la direction du campus américain de 42, qui a ouvert dans la baie de San Francisco à l’automne 2016.
+        </div>
+        <p>C’est sur ce constat que Nicolas Sadirac, physicien de formation et hacker de génie, co-fonde 42 en 2013 avec <strong>Kwame Yamgnane</strong>, Florian Bucher et Xavier Niel. La pédagogie n’a alors rien de révolutionnaire&nbsp;: elle est directement héritière de celle d’Epitech, elle-même héritière de celle d’Epita. “La pédagogie de 42, c’est 20 ans d’histoire, explique Nicolas Sadirac. On n’a fait qu’aller vers plus de liberté, en s’affranchissant progressivement des contraintes. À Epita, on était encore dans un environnement relativement scolaire. Quand on a voulu créer les projets, on s’est heurté au problème des accréditations (pour obtenir l’autorisation de délivrer un diplôme d’ingénieur, ndlr). Du coup, on a créé Epitech en renonçant au diplôme d’ingénieur pour pouvoir être libres, mais on est quand même resté dans le champ des certifications professionnelles.” Rien de tout cela à 42&nbsp;: plus d’années, plus de professeurs, plus de notes. “On est dans une logique de fuite des contraintes”, analyse Sadirac.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sectiongallery2-1"></section>
+  <section id="sectiongallery2-2"></section>
+  <section id="sectiongallery2-3"></section>
+  <section id="sectiongallery2-4"></section>
+
+  <section id="section6bis" class="section-text">
+    <div class="text">
+      <p>Contrairement à Epitech, 42 est une école gratuite. Les sujets de base sont les mêmes, mais sans contraintes et sans frais de scolarité&nbsp;: on comprend facilement pourquoi 42 vampirise les élèves de l'école-mère. <a class="portrait-link" id="link-raphael"><strong>Raphaël</strong></a> est l’un de ces transfuges&nbsp;: il n’a fait que la première année à Epitech, avant d’atterrir boulevard Bessières. “On nous vendait une école où tu travailles par projet, où t’as pas de cours, t’as pas de prof, raconte-t-il d’un ton goguenard. Tout ça pour presque 8&nbsp;000 balles pour la première année. Quand t’arrives début octobre, il fait super chaud, t’as pas la clim. Tu codes sur des ordis portables 14 pouces, donc t’es comme ça toute la journée.” Il se recroqueville pour montrer une posture inconfortable, puis reprend son récit. “Donc t’arrives le premier jour de piscine, tu as encore la facture en tête. Il fait chaud, tu es serré, tu te niques le dos, et en plus, la wi-fi ne marche pas. Et là, tu commences à douter&nbsp;: comment ça se fait que dans une école d’informatique, il n’y ait pas de wi-fi? J’ai toujours pas la réponse.”</p>
+      <p>Après la piscine, la scolarité à Epitech impose un rythme soutenu. Avec jusqu’à trois projets à faire en même temps et des deadlines tous les dimanches à 23h42, les élèves doivent tenir le rythme. “On bossait absolument tout le temps, raconte Raphaël. Du coup, si tu as des projets personnels comme, je ne sais pas moi, lire un livre ou faire du sport, tu vas te faire foutre, parce qu’il faut bosser. Pas question non plus d’approfondir les projets.” Quand il quitte Epitech pour 42, c’est la libération. “C'était propre, neuf, raconte-t-il avec des étoiles dans les yeux. J’ai vu ces Mac 27 pouces qui me souriaient en disant&nbsp;: “Vas-y, assied-toi sur mon fauteuil semi-gamer et installe tes mains sur mon clavier”. Et là, je me suis dit&nbsp;: “Ok, j’arrive tout de suite, adieu Epitech.”” A 42, il découvre que le temps alloué à chaque projet est quasiment illimité, et que la scolarité permet de choisir sa branche. “T’as le temps de travailler sur tes projets, de faire des bonus, d’approfondir, de comprendre ce qui se passe.  En entreprise, on peut être sous pression, et je comprends l’intérêt des deadlines. Mais quand t’es en période d’apprentissage, il vaut mieux prendre son temps.”</p>
+      <p><i>Vous pouvez facilement apprendre à utiliser un terminal informatique. Il s’agit d’une interface non graphique dans laquelle l’utilisateur peut saisir des lignes de commandes. Elles sont ensuite envoyées à un interpréteur qui les analyse et les exécute. Cet interpréteur est appelé le “shell”.</i></p>
+      <p><i>Un vrai shell permet à l’utilisateur d’interagir directement avec le système via le terminal. Ce n’est pas le cas du mini-terminal ci-dessous, qui n’est qu’un simulateur - mais il vous permettra de découvrir les principales commandes.</i></p>
+    </div>
+    <div id="miniterm-global">
+      <div id="miniterm-container">
+        <fake-terminal id="miniterm">miniterm &sim; &gt;</fake-terminal>
+        <script src="miniterm/miniterm.js"></script>
+      </div>
+      <div id="miniterm-notice">
+        <p><strong>Quelques commandes de base du shell Unix</strong>
+          <ul>
+            <li><strong>mkdir [file name] :</strong> créer un dossier</li>
+            <li><strong>ls :</strong> lister les dossiers</li>
+            <li><strong>cd [file name] :</strong> entrer dans un dossier</li>
+            <li><strong>pwd :</strong> retourner le nom du dossier courant</li>
+            <li><strong>echo [text] :</strong> écrire quelque chose dans la sortie standard</li>
+            <li><strong>man [command] :</strong> afficher la fonction d’une commande</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section7" class="pop">
+    <div class="overlaybox">
+      <h1>Ni prof, ni horaire, ni cours</h1>
+    </div>
+  </section>
+
+  <section id="section8" class="section-text">
+    <div class="text">
+      <p>Si 42 n'impose aucune deadline pour les projets, c’est parce que l'école mise sur l’autodiscipline. Ici, personne ne vérifie les temps de connexion des élèves&nbsp;: à eux d’organiser leur temps de travail. C’est aussi l’enseignement de la piscine&nbsp;: avec un sujet qui tombe chaque matin à 8h42, des examens hebdomadaires et des projets de groupe le week-end, les candidats n’ont pas le temps de souffler. Le mois de piscine met en place une dynamique qui reste en place le reste de la scolarité. Certains, comme Simon et Hugo, passent entre 50 et 70 heures par semaine à l'école. Mais la plupart des élèves se calent naturellement sur un rythme de 35 ou 40 heures, comme dans une école classique - à la différence qu’ici, il est inutile de prévoir un réveil le matin. À 9h, l'école est quasiment vide, mais il n’est pas rare de voir des groupes d'élèves continuer à travailler jusqu'à l’aurore.</p>
+      <p>La piscine fait plus que poser les bases de la scolarité&nbsp;: elle soude la communauté. La plupart des étudiants restent proches de leurs amis de piscine, et conservent pour certains le même groupe de travail. Et ce, même quand ils optent pour des choix de parcours différents.</p>
+      <p>Car la scolarité est construite comme un jeu vidéo, avec des niveaux, de l'expérience, des crédits et même des badges récompensant certaines actions. Chaque projet rendu rapporte des points d'expérience, qui permettent de monter dans les niveaux. Le niveau 7 permet de partir en stage, et le niveau 21 signe la fin de la scolarité. Les projets s’inscrivent dans une arborescence à quatre branches&nbsp;: Unix, algorithmes, graphisme et Web.</p>
+      <p><i>L’arborescence ci-dessous est similaire à celle qui est proposée sur l’espace personnel des étudiants. Cliquez sur une bulle pour voir le résumé du projet.</i></p>
+    </div>
+
+    <table class="graph-table">
+      <tr>
+        <td class="graph-container">
+          <div id="canvas-anchor"></div>
+        </td>
+        <td class="graph-info-container">
+          <div id="project-desc-insert-point"></div>
+        </td>
+      </tr>
+    </table>
+    <link rel="stylesheet" href="project_graph/graph.css"/>
+
+    <div class="text">
+      <p>Une fois un projet choisi, l'élève s’y inscrit et peut se fixer une deadline - ou pas. Il travaille alors selon les délais qu’il souhaite, avec les partenaires de son choix, puis rend son projet. Le programme sera alors corrigé par d’autres étudiants&nbsp;: c’est le peer-correcting, l’un des piliers de la pédagogie de l'école. L’ensemble est géré par un système de points&nbsp;: corriger quelqu’un rapporte un point, se faire corriger en coûte un également. Chaque projet doit être corrigé par trois à cinq étudiants. Les sessions de correction durent trente minutes à une heure, et sont l’occasion pour les étudiants d'échanger sur leur code, pour expliquer et justifier leurs choix de programmation. La plupart du temps, une erreur grave vaut zéro, et l'auteur du programme doit recommencer.</p>
+      <p>C’est la dure loi que doivent apprendre les apprentis développeurs. En programmation, oublier un point-virgule n’est pas une faute de frappe&nbsp;: c’est une faute tout court. Si tout n’est pas parfait, rien ne marche. “En piscine, au début, j’avais que des zéros pour des trucs cons, des fautes de norme, se souvient <a class="portrait-link" id="link-mehdi"><strong>Mehdi</strong></a>. Alors qu’au lycée j’avais l’habitude d’avoir des bonnes notes sans travailler, ici je me suis retrouvé à chialer sur la terrasse au-dessus de la cafet tellement j’en pouvais plus. A 42, tu comprends vite que le code c’est soit vrai, soit faux. C’est binaire. Dans le monde de l’entreprise, c’est pareil. Quand tu lances une bêta, elle doit être déjà parfaite. Tu ne lâches pas un projet quand il est fonctionnel à 90%.”</p>
+    </div>
+  </section>
+
+  <section id="sectiongallery3-1"></section>
+  <section id="sectiongallery3-2"></section>
+  <section id="sectiongallery3-3"></section>
+
+  <section id="section8bis" class="section-text">
+    <div class="text">
+    <p>Contraints à la rigueur, les élèves sont aussi formés au travail de groupe. Car la scolarité ne s'arrête pas aux projets individuels&nbsp;: l'école propose plusieurs fois par semaine des hackathons, des sessions de plusieurs jours où des élèves de l'école collaborent avec des étudiants d’autres écoles, des artistes ou des professionnels pour élaborer des projets innovants. L'école évolue en permanence. Avec une constante&nbsp;: le travail de groupe. “On a dépassé la créativité individuelle, analyse Nicolas Sadirac. Aujourd'hui, les enjeux sont trop profonds pour que des individus seuls puissent innover. Il faut une intelligence collective, avec des personnes capables non pas de collaborer, mais de co-créer. Par exemple, on organise des digital launch tracks avec HEC. On a deux solutions&nbsp;: soit le HEC fait le business plan, le 42 fait le code et le graphiste le design. Ça marche, mais le rendu final est médiocre. Soit chacun challenge les autres et déborde de son cadre de compétences, et là, on crée des choses inattendues et incroyables. Au final, on obtient une oeuvre collective qui transcende la créativité de chacun.” Le postulat peut sembler idéaliste, mais les résultats sont là&nbsp;: 42 revendique 100% d’embauche en sortie d'école. Des 2&nbsp;600 étudiants inscrits, une centaine seulement ont mené leur cursus à terme, jusqu’au niveau 21. Pour la plupart, les offres d’embauche commencent à arriver dès les premiers mois. A l’heure actuelle, l'école propose plus de 6&nbsp;000 offres de stage et d’emploi.</p>
+    <p>Clara Lamarque est chargée de recrutement chez CybelAngel, une société de détection de fuites de données qui emploie aujourd’hui trois étudiants de 42. “Au démarrage, on s’est tournés vers des profils ingénieurs, des écoles réputées comme Centrale, explique-t-elle. Mais ensuite, on a commencé à s'intéresser à 42. On a remarqué que très souvent, les meilleurs développeurs sont ceux qui ont ça dans le sang, et qui se sont formés en autodidactes dès le collège ou le lycée. On trouve beaucoup de ces profils-là à l'école 42. Ils ont une détermination à résoudre des problèmes complexes, une résistance devant la difficulté.” Les ingénieurs de formation sont majoritaires à CybelAngel, mais elle estime que les deux types de profils sont complémentaires. “En tant que start-up, on a besoin de personnes autonomes, et c’est le cas des élèves de 42, assure-t-elle. On peut les laisser travailler seuls sur des projets. Chez eux, la programmation est une passion.”</p>
+    </div>
+  </section>
+
+  <section id="section9" class="pop">
+    <div class="overlaybox">
+      <h1>Les effets pervers de l’autodiscipline</h1>
+    </div>
+  </section>
+
+  <section id="section10" class="section-text">
+    <div class="text">
+      <p>Cette réussite a un prix&nbsp;: à 42, si vous chutez, personne ne viendra vous relever. La scolarité n’est pas encadrée à l’exception des blackholes, ces deadlines fixées très largement, mais éliminatoires. Tomber dedans sans excuse valable peut vous coûter votre place à l’école. Il ne s’agit pas de faire pression sur les étudiants, car il est possible de les éviter tout en travaillant à un rythme très lent, mais de détecter les élèves fantômes, ou ceux qui ont décroché.</p>
+      <p>Zambla est dans ce cas. “J’ai fait un CFG, le Brevet des segpa, et puis un CAP en chaudronnerie industrielle. C’est vraiment le bas de l'échelle sociale, témoigne-t-il. J’ai raté la piscine d'août 2015, mais j’ai réussi la piscine de rattrapage en novembre. Du coup, j’ai fait ma rentrée à l'école en février 2016, en cours d'année. On arrivait au compte-goutte. Dans ces conditions, c'était difficile de trouver ses marques.” La problématique financière se fait aussi sentir : 42 a beau être gratuite, elle se trouve dans la ville la plus chère de France. Et n’est éligible que depuis mai 2017 aux bourses sur critères sociaux. “J'étais en galère de logement, je squattais chez des gens ou je dormais à la rue, poursuit Zambla. J’ai fini par trouver un appart, mais j'étais toujours en galère à l'école. J’avais pas mal de lacunes dans certains domaines, notamment les maths et l’anglais. Quand tu fais des recherches pour ton code, quasiment toute la doc est en anglais. J’avais des potes pour m’aider, mais tu ne peux pas demander aux gens de t’assister 24 heures sur 24.” Sans encadrement péagogique, il n'arrive pas à rester régulier. “Quand je venais, je restais coder 10 heures, mais il y avait aussi des périodes ou je venais plus trop, avoue-t-il. Finalement, je suis resté un an à Paris, et puis je suis retourné dans ma ville d’origine, en Alsace. J’ai essayé de m'accrocher au maximum à 42, mais je n’ai pas trouvé ma place.”</p>
+      <p>Même sans compter les blackholes, l'écart-type est énorme entre les premiers et les derniers de chaque promotion. <a class="portrait-link" id="link-ichem"><strong>Ichem</strong></a>, qui étudie en simultané à la faculté de Paris-Est Marne-la-Vallée et à 42, en est conscient. Lui qui espère monter sa start-up voit déjà l'école avec les yeux d’un futur patron. “A l'université, il y a un niveau plus homogène qu'à 42, explique-t-il. Ici, le major de promo est extrêmement loin du dernier. En tant que recruteur, si je suis amené à embaucher un 42, je me montrerais vigilant. Un type du bas de la promo vaudra moins qu’un étudiant de la fac, alors qu’un type du haut de la promo vaudra des millions de fois plus qu’un étudiant de la fac.”</p>
+      <p>L'école connaît des ajustements constants depuis son ouverture en 2013. Le décloisonnement temporel du cursus a été mis en place pour la seconde promotion, les blackholes ont été rajoutés à la troisième. Le système de peer-correction à points est aussi venu ensuite. Les dirigeants sont conscients de perdre des élèves en chemin, mais ces pertes collatérales font partie de la pédagogie de 42. Poser plus de cadres serait faire marche arrière. “Les blackholes sont là pour lutter contre les effets pervers de la liberté totale et de l’autodiscipline, explique Nicolas Sadirac. Ils sont regrettables mais nécessaires. Ceux qui y tombent sont ceux qui sont déjà trop intoxiqués par leur héritage scolaire.”</p>
+    </div>
+  </section>
+
+  <section id="section11" class="pop">
+    <div class="overlaybox">
+      <h1>Apprendre à ne pas apprendre</h1>
+    </div>
+  </section>
+
+  <section id="section12" class="section-text">
+    <div class="text">
+      <p>À chaque élève qui réussit, l'école devient plus performante pour ceux qui arrivent. Non seulement parce que l’offre d’emplois croissante rend 42 de plus en plus attractive, mais parce que les élèves peuvent revenir à l'école pour enrichir le panel des projets proposés. L’arborescence de la scolarité est ainsi en évolution constante. Dylan est l’auteur d’un de ces nouveaux projets. “Je voulais m’investir dans la pédagogie de l'école et rajouter un peu de maths dans le cursus de 42, raconte-t-il. C'était aussi l’occasion d’apprendre un nouveau langage. J’ai pris la suite du mec qui avait fait le projet ComputerV1, et, après avoir reçu l’accord de la pédago, j’ai commencé un nouveau projet. J’ai rédigé le sujet, je l’ai fait en PoC (“proof of concept”, réalisation expérimentale préliminaire d’un projet afin d’en montrer la faisabilité, ndlr) et j’ai rédigé la correction. Ça m’a pris un mois.” Il s’explique. “J’ai procédé par itération. Je pensais à de nouvelles features, je les écrivais dans le sujet et dès que je pensais être arrivé à une forme correcte, je prenais rendez-vous à la pédago pour en discuter. Et ainsi de suite jusqu'à ce qu’il soit validé. Après ça, hop! Il était sur l’intra.”</p>
+      <p>L'école est contrainte d'évoluer pour survivre, c’est la nature même de la programmation. “Quand on fait de la physique, on étudie la nature, explique Nicolas Sadirac. Elle fonctionne indépendamment de nous, on n’a pas d’action sur elle. Si demain, les physiciens décident que la gravité s'arrête, elle ne s'arrêtera pas pour autant. L’informatique est différente&nbsp;: c’est un ensemble de conventions entre êtres humains. Quand on change les règles du jeu en informatique, on change vraiment l’informatique. Si on prend par exemple un architecte de la Rome antique, qu’on le transporte en 2017 et qu’on lui demande de construire un pont, il arrivera à construire ce pont. Mais si on prend un développeur de 2012 et qu’on le téléporte maintenant, il ne saura rien faire.” La connaissance scientifique est en progrès&nbsp;: les chercheurs accumulent des strates de connaissance immuable. En informatique, la connaissance absolue n’existe pas. Les langages utilisés par les développeurs évoluent à une vitesse exponentielle.</p>
+      <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1rRDag3RMQTea5kjRUH0Zle_1Bbx0ue1Z1oZ4fxQwfAI&font=Default&lang=en&initial_zoom=2&height=650' width='120%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+      <p>“A 42, on ne nous apprend pas juste à coder, témoigne <a class="portrait-link" id="link-elise"><strong>Élise</strong></a>, qui est entrée à l'école l'année dernière. On nous apprend à s’adapter. Et c’est ça le plus important. Parce que dans notre milieu, on va toujours avoir de nouveaux langages, de nouvelles technologies. Les choses évoluent. Avec la formation qu’on reçoit ici, si on a besoin d’apprendre quelque chose, on sait où le trouver.” 42 n’est pas une école, c’est une association. Une fois passé le cap du premier stage, si l'étudiant choisit de retourner à 42, il y aura sa place toute sa vie. “Si demain je trouve un boulot qui me plaît et que je quitte 42 pour entrer dans la vie active, ajoute Élise, je sais que l'école restera toujours ouverte pour moi. Si dans quelques années je dois me former à un nouveau langage et que je n’y arrive pas, je peux retourner à 42. Quand tu rentres à 42, tu y es à vie.”</p>
+      <p>L'école de la IIIème République dont nous avons hérité a été conçue pour transmettre une connaissance absolue - scientifique, historique, culturelle. À l’inverse, l’objectif de 42 est de former des individus qui utiliseront la connaissance sans la mémoriser. En d’autres mots, de leur apprendre à ne pas apprendre. Si cette stratégie est l’exact contraire de l'éducation scientifique, elle a en revanche beaucoup à voir avec le processus créatif. C'est là le constat radical de 42&nbsp;: l’informatique n’est pas une science, mais un art.</p>
+    </div>
+  </section>
+
+  <section id="section13">
+    <!-- <h1 class="textoverpic"></h1> -->
+    <a href="#" class="scrollTop">TOP ↑</a>
+  </section>
+  </div>
+<script type="text/javascript" src="action.js"></script>
+<script src="menu/js/menu.js"></script>
+<script src="parallax.js"></script>
+<script src="popup.js"> </script>
+</body>
+</html>
